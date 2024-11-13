@@ -1,0 +1,66 @@
+body {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    width: fit-content;
+    padding-block: 7%;
+    font-family: monospace;
+    font-size:xx-large;
+    font-weight:bolder;
+    color:palevioletred;
+}
+
+.calculator {
+    width: 320px;
+    background: hsl(208, 28%, 35%);
+    background: linear-gradient(to top, hsl(208, 30%, 35%), hsl(208, 30%, 40%));
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.screen {
+    background: hsl(190, 20%, 88%);
+    color: black;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px black;
+    white-space: nowrap;  /* Evita que el texto se envuelva */
+    overflow: hidden;  /* Oculta el desbordamiento */
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background: hsl(221, 14%, 66%);
+    background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: hsl(221, 14%, 61%);
+}
+
+.btn:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
